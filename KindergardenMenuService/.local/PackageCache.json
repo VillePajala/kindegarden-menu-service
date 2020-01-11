@@ -40,6 +40,20 @@
     },
     {
       "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\valor\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\valor\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\valor\\.nuget\\packages\\uipath.ocr.contracts/2.3.0-preview\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\valor\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\valor\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\valor\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "19.12.0-preview"
       },
@@ -98,26 +112,19 @@
         "C:\\Users\\valor\\.nuget\\packages\\uipath.uiautomation.activities/19.12.0-preview\\lib/net461/UiPath.Wizards.dll",
         "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Core.dll",
-        "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.dll",
         "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Microsoft.dll",
         "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\valor\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.dll"
       ]
     },
     {
       "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "3.1.0"
+        "Id": "System.Text.RegularExpressions",
+        "Version": "4.3.1"
       },
-      "Assemblies": [
-        "C:\\Users\\valor\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\valor\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\valor\\.nuget\\packages\\uipath.ocr.contracts/2.3.0-preview\\lib/net45/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\valor\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\valor\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\valor\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.dll"
-      ]
+      "Assemblies": []
     }
   ],
   "Conflicts": [],
@@ -220,6 +227,11 @@
     "SharpZipLib": {
       "Id": "SharpZipLib",
       "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "System.Text.RegularExpressions": {
+      "Id": "System.Text.RegularExpressions",
+      "Version": "4.3.1",
       "Dependencies": []
     },
     "System.ValueTuple": {

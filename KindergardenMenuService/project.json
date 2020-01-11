@@ -3,6 +3,7 @@
   "description": "A process to get daily mneu of a kindergarden",
   "main": "Main.xaml",
   "dependencies": {
+    "System.Text.RegularExpressions": "[4.3.1]",
     "UiPath.Excel.Activities": "[2.8.0-preview]",
     "UiPath.Mail.Activities": "[1.8.0-preview]",
     "UiPath.PDF.Activities": "[3.1.0]",
@@ -30,7 +31,8 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
-    }
+    },
+    "fileInfos": []
   },
   "expressionLanguage": "VisualBasic"
 }
