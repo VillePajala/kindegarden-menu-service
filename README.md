@@ -1,5 +1,12 @@
 # Kindegarden menu service
-A softwarre robot to fetch information on what foods are served each day in the kidirgadern.
+An RPA process to fetch the menu of a kindergarden from web.
 
-### Before running the robot:
- * The process uses Google Chrome and for the pdf -file to work, Chrome's settings must be changed so that when downlading a file, the       broser asks for the target folder. Settings -> Advanced -> Ask where to save each file before downloading -> On
+### Prerequisite tools:
+* UiPath Studio
+* Google Chrome
+
+### Modifications to tools:
+ * In order to make downloading of files work, Chrome's settings must be changed to ask download location. Settings -> Advanced -> Ask where to save each file before downloading -> On
+ 
+ ### Process map
+ * (a gliffy flow chart will be added later)
