@@ -11,4 +11,7 @@ An UiPath process to fetch the menu of a kindergarden from web, split the data b
  
  ### Process map
  
+ 
+ 
+ 
  ![](ProcessMap.jpg)
