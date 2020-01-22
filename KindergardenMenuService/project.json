@@ -3,7 +3,6 @@
   "description": "A process to get daily mneu of a kindergarden",
   "main": "Main.xaml",
   "dependencies": {
-    "System.Text.RegularExpressions": "[4.3.1]",
     "UiPath.Excel.Activities": "[2.8.0-preview]",
     "UiPath.Mail.Activities": "[1.8.0-preview]",
     "UiPath.PDF.Activities": "[3.1.0]",
@@ -14,7 +13,7 @@
   "webServices": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.8.0.0",
-  "projectVersion": "1.0.1",
+  "projectVersion": "1.0.2",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
