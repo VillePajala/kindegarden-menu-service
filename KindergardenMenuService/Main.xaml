@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="970,955" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="970,995" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
@@ -176,7 +176,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">300,719 300,749</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Parse data and send menu as email" sap:VirtualizedContainerService.HintSize="604,2013" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Parse data and send menu as email" sap:VirtualizedContainerService.HintSize="604,2248" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -238,13 +238,13 @@
                         <InArgument x:TypeArguments="x:Int32">0</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each day in weeks menus" sap:VirtualizedContainerService.HintSize="562,1130" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[menuDays]">
+                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each day in weeks menus" sap:VirtualizedContainerService.HintSize="562,1365" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[menuDays]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,996" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1231" sap2010:WorkflowViewState.IdRef="Sequence_13">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -267,7 +267,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign DisplayName="Assign the date of the menu item" sap:VirtualizedContainerService.HintSize="360,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                  <Assign DisplayName="Assign the date of the menu item" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_14">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[menuDay]</OutArgument>
                                     </Assign.To>
@@ -278,7 +278,7 @@
                                 </Sequence>
                               </ui:CommentOut.Body>
                             </ui:CommentOut>
-                            <Assign DisplayName="Assign today's name as string" sap:VirtualizedContainerService.HintSize="360,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                            <Assign DisplayName="Assign today's name as string" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[today]</OutArgument>
                               </Assign.To>
@@ -298,12 +298,32 @@
                                 </Assign>
                               </If.Then>
                             </If>
-                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Send menu as email" sap:VirtualizedContainerService.HintSize="360,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="HelperWorkFlows\SendMenuOfTheDayToEmail.xaml">
-                              <ui:InvokeWorkflowFile.Arguments>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_menu">[item.ToString]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_date">[menuDay]</InArgument>
-                              </ui:InvokeWorkflowFile.Arguments>
-                            </ui:InvokeWorkflowFile>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                              <TryCatch.Try>
+                                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Send menu as email" sap:VirtualizedContainerService.HintSize="360,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="HelperWorkFlows\SendMenuOfTheDayToEmail.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_menu">[item.ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_date">[menuDay]</InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,160" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Sending of email failed&quot;]" />
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
                           </Sequence>
                         </ActivityAction>
                       </ui:ForEach.Body>
@@ -317,7 +337,7 @@
                           <av:Size x:Key="ShapeSize">200,66</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Delete PDF" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <Sequence DisplayName="Delete PDF" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_16">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -338,7 +358,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">300,522.04 300,557</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Get week number" sap:VirtualizedContainerService.HintSize="476,759" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Get week number" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
