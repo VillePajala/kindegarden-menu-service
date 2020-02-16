@@ -141,7 +141,7 @@
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendMail.Files>
     </ui:SendMail>
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="[menu]" DisplayName="Send menu info via SMTP Mail Message" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Password="[decryptedPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Päiväkodin ruokalista &quot; + in_date]" To="[recipient3]">
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="[menu]" DisplayName="Send menu info via SMTP Mail Message" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Password="[decryptedPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Päiväkodin ruokalista &quot; + in_date]" To="[recipient2]">
       <ui:SendMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendMail.Files>
